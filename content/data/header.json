@@ -11,83 +11,22 @@
                 },
                 "type": "ImageBlock"
             },
-            "primaryLinks": [
-                {
-                    "label": "Pricing",
-                    "url": "/pricing",
-                    "icon": "arrowRight",
-                    "iconPosition": "right",
-                    "style": "secondary",
-                    "type": "Link"
-                },
-                {
-                    "label": "Blog",
-                    "altText": "Blog",
-                    "url": "/blog",
-                    "icon": "arrowRight",
-                    "iconPosition": "right",
-                    "style": "secondary",
-                    "type": "Link"
-                },
-                {
-                    "label": "Careers",
-                    "altText": "Careers page",
-                    "url": "/careers",
-                    "icon": "arrowRight",
-                    "iconPosition": "right",
-                    "style": "secondary",
-                    "type": "Link"
-                },
-                {
-                    "label": "Dropdown",
-                    "altText": "Dropdown",
-                    "links": [
-                        {
-                            "label": "Dropdown item",
-                            "url": "/",
-                            "icon": "arrowRight",
-                            "iconPosition": "right",
-                            "style": "secondary",
-                            "type": "Link"
-                        },
-                        {
-                            "label": "Dropdown item",
-                            "url": "/",
-                            "icon": "arrowRight",
-                            "iconPosition": "right",
-                            "style": "secondary",
-                            "type": "Link"
-                        },
-                        {
-                            "label": "Dropdown item",
-                            "url": "/",
-                            "icon": "arrowRight",
-                            "iconPosition": "right",
-                            "style": "secondary",
-                            "type": "Link"
-                        }
-                    ],
-                    "labelStyle": "secondary",
-                    "type": "SubNav"
-                }
-            ],
+            "primaryLinks": [],
             "secondaryLinks": [
                 {
-                    "label": "Sign up",
-                    "altText": "Sign up",
-                    "url": "https://app.netlify.com/signup",
-                    "icon": "arrowRight",
-                    "iconPosition": "right",
-                    "style": "secondary",
-                    "type": "Button"
-                },
-                {
-                    "label": "Log in",
-                    "url": "/",
-                    "icon": "arrowRight",
-                    "iconPosition": "right",
+                    "label": "Contact",
+                    "url": "#contact",
                     "style": "primary",
-                    "type": "Button"
+                    "type": "Button",
+                    "styles": {
+                        "self": {
+                            "padding": [
+                                "py-4",
+                                "px-8"
+                            ],
+                            "fontSize": "text-xl"
+                        }
+                    }
                 }
             ],
             "variant": "logo-left-primary-nav-centered",

@@ -279,7 +279,7 @@ function ListOfLinks(props) {
                         >
                             <Action
                                 {...link}
-                                className={classNames('whitespace-nowrap', inMobileMenu ? 'w-full' : 'text-sm', {
+                                className={classNames('whitespace-nowrap', inMobileMenu ? 'w-full' : link.__metadata.modelName === 'Button' ? 'text-lg px-6 py-3' : 'text-sm', {
                                     'justify-start py-3': inMobileMenu && link.__metadata.modelName === 'Link'
                                 })}
                                 {...(enableAnnotations && { 'data-sb-field-path': `.${index}` })}
@@ -316,8 +316,8 @@ function LinkWithSubnav(props) {
             onMouseLeave={
                 !process.env.stackbitPreview && !inMobileMenu
                     ? () => {
-                          setIsSubNavOpen(false);
-                      }
+                        setIsSubNavOpen(false);
+                    }
                     : undefined
             }
             data-sb-field-path={fieldPath}
@@ -327,8 +327,8 @@ function LinkWithSubnav(props) {
                 onMouseOver={
                     !process.env.stackbitPreview && !inMobileMenu
                         ? () => {
-                              setIsSubNavOpen(true);
-                          }
+                            setIsSubNavOpen(true);
+                        }
                         : undefined
                 }
                 onClick={() => setIsSubNavOpen((prev) => !prev)}

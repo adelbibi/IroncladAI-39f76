@@ -1,64 +1,5 @@
 {
-    "logo": {
-        "url": "/images/logo-white.svg",
-        "altText": "Logo light",
-        "type": "ImageBlock"
-    },
-    "text": "A description of your brand",
-    "primaryLinks": {
-        "title": "Product",
-        "links": [
-            {
-                "label": "Features",
-                "altText": "Features page",
-                "url": "/",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
-                "type": "Link"
-            },
-            {
-                "label": "Pricing",
-                "url": "/pricing",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
-                "type": "Link"
-            },
-            {
-                "label": "Documentation",
-                "url": "/",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
-                "type": "Link"
-            }
-        ],
-        "type": "FooterLinksGroup"
-    },
-    "secondaryLinks": {
-        "title": "Company",
-        "links": [
-            {
-                "label": "Careers",
-                "altText": "careers page",
-                "url": "/careers",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
-                "type": "Link"
-            },
-            {
-                "label": "Blog",
-                "url": "/blog",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
-                "type": "Link"
-            }
-        ],
-        "type": "FooterLinksGroup"
-    },
+    "text": "© 2025 IroncladAI. All rights reserved.",
     "socialLinks": [
         {
             "altText": "GitHub link",
@@ -80,30 +21,11 @@
         },
         {
             "altText": "Email link",
-            "url": "/",
+            "url": "mailto:bibiadel93@gmail.com",
             "icon": "mail",
             "type": "Social"
         }
     ],
-    "legalLinks": [
-        {
-            "label": "Terms",
-            "url": "/",
-            "icon": "arrowRight",
-            "iconPosition": "right",
-            "style": "secondary",
-            "type": "Link"
-        },
-        {
-            "label": "Privacy",
-            "url": "/",
-            "icon": "arrowRight",
-            "iconPosition": "right",
-            "style": "secondary",
-            "type": "Link"
-        }
-    ],
-    "copyrightText": "Powered by [Netlify](https://www.netlify.com/)\n",
     "colors": "bg-dark-fg-light",
     "type": "Footer"
 }

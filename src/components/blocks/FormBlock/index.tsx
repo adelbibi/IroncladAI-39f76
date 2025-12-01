@@ -7,7 +7,7 @@ import SubmitButtonFormControl from './SubmitButtonFormControl';
 
 export default function FormBlock(props) {
     const formRef = React.createRef<HTMLFormElement>();
-    const { fields = [], elementId, submitButton, className, styles = {}, 'data-sb-field-path': fieldPath } = props;
+    const { fields = [], elementId, submitButton, className, colors, styles = {}, 'data-sb-field-path': fieldPath } = props;
 
     if (fields.length === 0) {
         return null;
@@ -28,14 +28,15 @@ export default function FormBlock(props) {
                 'sb-component-block',
                 'sb-component-form-block',
                 className,
+                colors,
                 styles?.self?.margin ? mapStyles({ margin: styles?.self?.margin }) : undefined,
                 styles?.self?.padding ? mapStyles({ padding: styles?.self?.padding }) : undefined,
                 styles?.self?.borderWidth && styles?.self?.borderWidth !== 0 && styles?.self?.borderStyle !== 'none'
                     ? mapStyles({
-                          borderWidth: styles?.self?.borderWidth,
-                          borderStyle: styles?.self?.borderStyle,
-                          borderColor: styles?.self?.borderColor ?? 'border-primary'
-                      })
+                        borderWidth: styles?.self?.borderWidth,
+                        borderStyle: styles?.self?.borderStyle,
+                        borderColor: styles?.self?.borderColor ?? 'border-primary'
+                    })
                     : undefined,
                 styles?.self?.borderRadius ? mapStyles({ borderRadius: styles?.self?.borderRadius }) : undefined
             )}
@@ -43,7 +44,7 @@ export default function FormBlock(props) {
             id={elementId}
             onSubmit={handleSubmit}
             ref={formRef}
-            data-sb-field-path= {fieldPath}
+            data-sb-field-path={fieldPath}
         >
             <div
                 className={classNames('w-full', 'flex', 'flex-wrap', 'gap-8', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}

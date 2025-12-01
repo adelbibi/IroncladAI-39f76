@@ -31,13 +31,17 @@ export default function ImageBlock(props) {
                     styles?.self?.padding ? mapStyles({ padding: styles?.self?.padding }) : undefined,
                     styles?.self?.borderWidth && styles?.self?.borderWidth !== 0 && styles?.self?.borderStyle !== 'none'
                         ? mapStyles({
-                              borderWidth: styles?.self?.borderWidth,
-                              borderStyle: styles?.self?.borderStyle,
-                              borderColor: styles?.self?.borderColor ?? 'border-primary'
-                          })
+                            borderWidth: styles?.self?.borderWidth,
+                            borderStyle: styles?.self?.borderStyle,
+                            borderColor: styles?.self?.borderColor ?? 'border-primary'
+                        })
                         : undefined,
                     styles?.self?.borderRadius ? mapStyles({ borderRadius: styles?.self?.borderRadius }) : undefined
                 )}
+                style={{
+                    height: styles?.self?.height,
+                    width: styles?.self?.width
+                }}
                 src={url}
                 alt={altText}
             />

@@ -133,47 +133,51 @@ sections:
 
     colors: bg-neutral-fg-dark
 
-  # - type: ImageGallerySection
-  #   subtitle: Acknowledged by
-  #   images:
-  #     - url: /images/oxford-logo.svg
-  #       altText: University of Oxford
-  #       type: ImageBlock
-  #       styles:
-  #         self:
-  #           height: 6px
-  #           width: auto
-  #     - url: /images/amazon-logo.svg
-  #       altText: Amazon
-  #       type: ImageBlock
-  #       styles:
-  #         self:
-  #           height: 6px
-  #           width: auto
-  #     - url: /images/google-logo.svg
-  #       altText: Google
-  #       type: ImageBlock
-  #       styles:
-  #         self:
-  #           height: 6px
-  #           width: auto
-  #     - url: /images/softserve-logo.png
-  #       altText: SoftServe
-  #       type: ImageBlock
-  #       styles:
-  #         self:
-  #           height: 6px
-  #           width: auto
-  #   motion: move-to-left
-  #   colors: bg-light-fg-dark
-  #   styles:
-  #     self:
-  #       justifyContent: center
-  #       padding: [pt-8, pb-8]
-  #     subtitle:
-  #       textAlign: center
+  - type: ImageGallerySection
+    subtitle: Acknowledged by
+    images:
+      - url: /images/oxford-logo.svg
+        altText: University of Oxford
+        type: ImageBlock
+        styles:
+          self:
+            height: 56px
+            width: auto
+            margin: [mr-24]
+      - url: /images/amazon-logo.svg
+        altText: Amazon
+        type: ImageBlock
+        styles:
+          self:
+            height: 56px
+            width: auto
+            margin: [mr-24]
+      - url: /images/google-logo.svg
+        altText: Google
+        type: ImageBlock
+        styles:
+          self:
+            height: 56px
+            width: auto
+            margin: [mr-24]
+      - url: /images/softserve-logo.png
+        altText: SoftServe
+        type: ImageBlock
+        styles:
+          self:
+            height: 56px
+            width: auto
+    motion: static
+    colors: bg-light-fg-dark
+    styles:
+      self:
+        justifyContent: center
+        padding: [pt-16, pb-16]
+      subtitle:
+        textAlign: center
 
   - type: GenericSection
+    elementId: contact
     title:
       text: Contact Us
       color: text-dark
@@ -204,6 +208,7 @@ sections:
           width: full
           type: TextareaFormControl
       elementId: contact-form
+      colors: bg-light-fg-dark
       styles:
         self:
           padding: [pt-6, pb-6, pl-6, pr-6]
@@ -222,7 +227,7 @@ sections:
       label: Contact Us
       color: text-primary
       type: Badge
-    colors: bg-light-fg-dark
+    colors: bg-neutral-fg-dark
 
 seo:
   metaTitle: AI Safety & Agent Consulting — Ironclad AI
