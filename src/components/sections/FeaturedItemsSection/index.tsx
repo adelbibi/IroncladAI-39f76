@@ -83,6 +83,8 @@ function FeaturedItemVariants(props) {
             return <FeaturedItemsSmallList {...rest} />;
         case 'big-list':
             return <FeaturedItemsBigList {...rest} />;
+        case 'four-col-grid':
+            return <FeaturedItemsFourColGrid {...rest} />;
         case 'toggle-list':
             return <FeaturedItemsToggleList {...rest} />;
         default:
@@ -117,6 +119,24 @@ function FeaturedItemsTwoColGrid(props) {
     return (
         <div
             className={classNames('w-full', 'grid', 'gap-10', 'sm:grid-cols-2', { 'mt-12': hasTopMargin })}
+            {...(hasAnnotations && { 'data-sb-field-path': '.items' })}
+        >
+            {items.map((item, index) => (
+                <FeaturedItem key={index} {...item} hasSectionTitle={hasSectionTitle} {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })} />
+            ))}
+        </div>
+    );
+}
+
+function FeaturedItemsFourColGrid(props) {
+    const { items = [], hasTopMargin, hasSectionTitle, hasAnnotations } = props;
+    if (items.length === 0) {
+        return null;
+    }
+    const FeaturedItem = getComponent('FeaturedItem');
+    return (
+        <div
+            className={classNames('w-full', 'grid', 'gap-6', 'sm:grid-cols-2', 'lg:grid-cols-4', { 'mt-12': hasTopMargin })}
             {...(hasAnnotations && { 'data-sb-field-path': '.items' })}
         >
             {items.map((item, index) => (
