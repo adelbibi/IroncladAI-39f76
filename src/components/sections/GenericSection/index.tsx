@@ -41,8 +41,10 @@ export default function GenericSection(props) {
             >
                 {hasTextContent && (
                     <div
-                        className={classNames('w-full', 'max-w-sectionBody', {
-                            'lg:max-w-[27.5rem]': hasMedia && hasXDirection
+                        className={classNames('w-full', {
+                            'max-w-[1500px]': styles?.self?.textAlign === 'center',
+                            'max-w-sectionBody': styles?.self?.textAlign !== 'center',
+                            'lg:max-w-[27.5rem]': hasMedia && hasXDirection && styles?.self?.textAlign !== 'center'
                         })}
                     >
                         {badge && <Badge {...badge} {...(enableAnnotations && { 'data-sb-field-path': '.badge' })} />}

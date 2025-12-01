@@ -7,30 +7,25 @@ sections:
       text: AI Safety & Agent Security Consulting for Modern Enterprises
       color: text-dark
       type: TitleBlock
+      styles:
+        self:
+          textAlign: center
     subtitle: Oxford-trained experts helping teams deploy AI safely and confidently.
     text: >
       Ironclad AI is a consultancy specializing in AI safety, agent security, and
       responsible deployment. Backed by Oxford research, SoftServe delivery experience,
       contributions to major AI-related legal cases, and funding from UK AISI, Amazon,
       and Google, we help teams ship AI systems securely and efficiently.
-    media:
-      # url: /images/main-herto.svg
-      url: /images/ironcladai-logo.jpg
-      altText: AI safety and agent consulting visual
-      elementId: ''
-      type: ImageBlock
-      styles:
-        self:
-          alignItems: center
-          padding: [pt-16, pl-16, pb-16, pr-16]
     elementId: ''
-    variant: three-col-grid
     colors: bg-dark-fg-dark
     styles:
       self:
-        padding: [pb-16, pt-16, pl-16, pr-16]
+        padding: [pb-16, pt-16, pl-32, pr-32]
         justifyContent: center
+        textAlign: center
       subtitle:
+        textAlign: center
+      text:
         textAlign: center
 
   - type: FeaturedItemsSection
