@@ -50,6 +50,44 @@ sections:
       subtitle:
         textAlign: center
     items:
+
+      - type: FeaturedItem
+        title: AI R&D Advisory
+        tagline: Stay cutting-edge
+        subtitle: SOTA research & internal guidance.
+        text: >
+          Expert direction for teams building advanced AI and agentic capabilities.
+        image:
+          url: /images/Gemini_Generated_Image_1_cropped.png
+          altText: Research advisory illustration
+          type: ImageBlock
+          styles:
+            self:
+              borderRadius: x-large
+        colors: bg-light-fg-dark
+        styles:
+          self:
+            padding: [pt-8, pl-8, pb-8, pr-8]
+            borderRadius: large
+      - type: FeaturedItem
+        title: AI Strategy & Deployment
+        tagline: Accelerate delivery
+        subtitle: From idea to production.
+        text: >
+          Hands-on guidance to help teams deploy AI responsibly and efficiently.
+        image:
+          url: /images/Gemini_Generated_Image_4_cropped.png
+          altText: Deployment illustration
+          type: ImageBlock
+          styles:
+            self:
+              borderRadius: x-large
+        colors: bg-light-fg-dark
+        styles:
+          self:
+            padding: [pt-8, pl-8, pb-8, pr-8]
+            borderRadius: large
+
       - type: FeaturedItem
         title: Threat Modeling
         tagline: Understand your risks
@@ -78,44 +116,6 @@ sections:
         image:
           url: /images/Gemini_Generated_Image_3_cropped.png
           altText: Red teaming visualization
-          type: ImageBlock
-          styles:
-            self:
-              borderRadius: x-large
-        colors: bg-light-fg-dark
-        styles:
-          self:
-            padding: [pt-8, pl-8, pb-8, pr-8]
-            borderRadius: large
-
-      - type: FeaturedItem
-        title: AI R&D Advisory
-        tagline: Stay cutting-edge
-        subtitle: SOTA research & internal guidance.
-        text: >
-          Expert direction for teams building advanced AI and agentic capabilities.
-        image:
-          url: /images/Gemini_Generated_Image_1_cropped.png
-          altText: Research advisory illustration
-          type: ImageBlock
-          styles:
-            self:
-              borderRadius: x-large
-        colors: bg-light-fg-dark
-        styles:
-          self:
-            padding: [pt-8, pl-8, pb-8, pr-8]
-            borderRadius: large
-
-      - type: FeaturedItem
-        title: AI Strategy & Deployment
-        tagline: Accelerate delivery
-        subtitle: From idea to production.
-        text: >
-          Hands-on guidance to help teams deploy AI responsibly and efficiently.
-        image:
-          url: /images/Gemini_Generated_Image_4_cropped.png
-          altText: Deployment illustration
           type: ImageBlock
           styles:
             self:

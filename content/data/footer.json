@@ -2,20 +2,14 @@
     "text": "© 2025 IroncladAI. All rights reserved.",
     "socialLinks": [
         {
-            "altText": "GitHub link",
-            "url": "https://github.com/netlify",
-            "icon": "github",
-            "type": "Social"
-        },
-        {
             "altText": "Twitter link",
-            "url": "https://twitter.com/netlify",
+            "url": "https://x.com/Adel_Bibi",
             "icon": "twitter",
             "type": "Social"
         },
         {
             "altText": "LinkedIn link",
-            "url": "https://www.linkedin.com/company/netlify",
+            "url": "https://www.linkedin.com/in/adel-bibi-ba3671ab/",
             "icon": "linkedin",
             "type": "Social"
         },
