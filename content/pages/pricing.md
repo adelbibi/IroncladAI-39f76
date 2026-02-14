@@ -91,13 +91,6 @@ sections:
           url: /images/abstract-feature3.svg
           altText: Pricing plan 3
           type: ImageBlock
-        actions:
-          - label: Contact us
-            url: /
-            icon: arrowRight
-            iconPosition: right
-            style: secondary
-            type: Button
         colors: bg-neutral-fg-dark
         styles:
           self:
